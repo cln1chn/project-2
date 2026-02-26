@@ -1,0 +1,71 @@
+/* Place CSS styles here */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #343131;
+}
+
+h1 {
+    font-size: 400%;
+    font-family: monospace;
+    text-align: center;
+    color: floralwhite;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("blurryman.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: rgb(135, 135, 135);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+a:visited {
+    color: #551A8B;
+}
