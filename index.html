@@ -46,7 +46,6 @@
       <img src="img/blurryman.jpeg" alt="blurry man">
     </div>
 
-    <!-- centered countdown: days : hours : minutes -->
     <div class="countdown" aria-label="countdown clock" role="group">
       <p class="countdown-label">countdown</p>
       <div class="countdown-time" aria-live="polite">
@@ -57,7 +56,8 @@
     </div>
     
     <div class="hero-overlay hero-center">
-      <h1>grayfest</h1>
+      <img src="img/grayfestlogo.png" alt="grayfest logo" class="hero-logo">  
+      <h1>grayfest</h1>    
       <p>presale now open</p>
       <a class="btn" href="#presale">sign up here</a>
     </div>
@@ -118,6 +118,7 @@
           <label for="phone">phone #</label>
           <input id="phone" type="tel" required placeholder="what's ya digits" >
         </div>
+    <!-- I could not figure out how to require numerical input!! -->
 
         <div class="field">
           <label for="email">email</label>
@@ -148,7 +149,6 @@
 </div>
 
 <script>
-  // presale popup
   const form = document.getElementById('presaleForm');
   const thanks = document.getElementById('thanks');
 
@@ -161,7 +161,6 @@
     }, 1600);
   });
 
-  // countdown to may 30, 2026 6:00 pm (local time)
   const target = new Date('2026-05-30T18:00:00');
 
   const dEl = document.getElementById('cd-days');
